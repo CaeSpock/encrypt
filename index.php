@@ -1,4 +1,10 @@
 <?php
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
 
   // Configuration paths
   $pathinc = "inc";
@@ -39,16 +45,20 @@
     $phrase = str_replace("Ú", "U", $phrase);
     $phrase = str_replace("ü", "U", $phrase);
     $phrase = str_replace("Ü", "U", $phrase);
-    // Lets force the key is an integer
+    // Lets force the key as an integer
     settype($enckey, "integer");
+    // Lets force the key is a always a positive number
+    $enckey = abs($enckey);
     // Force string to ASCII
     // $phrase = mb_convert_encoding($phrase, "ASCII");
     $phrase = iconv("UTF-8", "ASCII//TRANSLIT", $phrase);
     if ($enctype == 1) {
-      include_once("caesar1.php");
+      include_once("trasposition.php");
     } elseif ($enctype == 2) {
-      include_once("caesar2.php");
+      include_once("caesar1.php");
     } elseif ($enctype == 3) {
+      include_once("caesar2.php");
+    } elseif ($enctype == 4) {
       include_once("rot13.php");
     } else {
       echo "$l_unknowncypher<br />\n";
@@ -70,14 +80,18 @@
     echo "    <label for=\"inputRadio\">$l_choosecipher:</label>\n";
     echo "    <div class=\"form-check\">\n";
     echo "      <input class=\"form-check-input\" type=\"radio\" name=\"enctype\" id=\"enctypeRadio\" value=\"1\">\n";
-    echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_caesar1</label>\n";
+    echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_trasposition</label>\n";
     echo "    </div>\n";
     echo "    <div class=\"form-check\">\n";
     echo "      <input class=\"form-check-input\" type=\"radio\" name=\"enctype\" id=\"enctypeRadio\" value=\"2\">\n";
-    echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_caesar2</label>\n";
+    echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_caesar1</label>\n";
     echo "    </div>\n";
     echo "    <div class=\"form-check\">\n";
     echo "      <input class=\"form-check-input\" type=\"radio\" name=\"enctype\" id=\"enctypeRadio\" value=\"3\">\n";
+    echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_caesar2</label>\n";
+    echo "    </div>\n";
+    echo "    <div class=\"form-check\">\n";
+    echo "      <input class=\"form-check-input\" type=\"radio\" name=\"enctype\" id=\"enctypeRadio\" value=\"4\">\n";
     echo "      <label class=\"form-check-label\" for=\"enctypeRadio\">$l_rot13</label>\n";
     echo "    </div>\n";
     echo "  </div>\n";

@@ -1,4 +1,10 @@
 <?php
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
   echo "<!doctype html>\n";
   echo "<html lang=\"en\">\n";
   echo "  <head>\n";

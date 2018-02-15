@@ -1,6 +1,12 @@
 <?php
-  // Encryption Type 2
-  // Cesar Type 2 - Cesar 1 1st variation
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
+
+  // Cesar cipher Type 2 - Cesar 1 1st variation
   if ($enckey==0 or !isset($enckey)) {
     echo "<div class=\"alert alert-danger\">\n";
     echo "<strong>$l_alert!</strong> $l_noksent\n";
@@ -43,10 +49,10 @@
       echo "<tr>\n";
       echo " <td class=\"bg-success text-right\"><strong>$l_newphrase:</strong></td>\n";
       echo " <td><samp>";
-      $contador=0;
+      $counter=0;
       $enckeyesimo = 0;
-      while ($contador < strlen($phrase)) {
-        if ( ($enckeyesimo == $enckey) and ($contador > 0)) { 
+      while ($counter < strlen($phrase)) {
+        if ( ($enckeyesimo == $enckey) and ($counter > 0)) { 
           $azar=rand(65,90);
           if ($caesar2_cu==1) {
             echo "<font color=\"#800000\"><u>".chr($azar)."</u></font>";
@@ -55,7 +61,7 @@
           }
           $enckeyesimo = 0;
         }
-        $position = ord($phrase[$contador]);
+        $position = ord($phrase[$counter]);
         if ($position >=65 and $position<=90) {
           if ($position > (90-$enckey)) {
             $position= $position+$enckey-(26);
@@ -64,7 +70,7 @@
           }
         }
         echo chr($position);
-        $contador++;
+        $counter++;
         $enckeyesimo++;
       }
       echo "</samp></td>\n";
@@ -72,11 +78,11 @@
       echo "<tr>\n";
       echo " <td class=\"bg-danger text-right\"><strong>$l_inverted:</strong></td>\n";
       echo " <td><samp>";
-      $contador=0;
+      $counter=0;
       $enckeyesimo = 0;
-      while ($contador < strlen($phrase)) {
+      while ($counter < strlen($phrase)) {
         if ($enckeyesimo != $enckey) {
-          $position = ord($phrase[$contador]);
+          $position = ord($phrase[$counter]);
           if ($position >=65 and $position<=90) {
             if ($position < (65+$enckey)) {
               $position = $position - $enckey +26;
@@ -89,7 +95,7 @@
           // echo "<font color=\"red\">#</font>";
           $enckeyesimo = -1;
         }
-        $contador++;
+        $counter++;
         $enckeyesimo++;
       }
       echo "</samp></td>\n";

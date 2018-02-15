@@ -1,12 +1,18 @@
 <?php
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
   // Language definitions
 
   // Main Variables
       $l_alphabet = "Alphabet";
    $l_newalphabet = "New alphabet";
         $l_phrase = "Phrase";
-     $l_newphrase = "New phrase";
-      $l_inverted = "Inverted";
+     $l_newphrase = "Encrypted";
+      $l_inverted = "Un-Encrypted";
         $l_goback = "Go Back";
           $l_type = "Type";
    $l_enterphrase = "Enter phrase to cipher";
@@ -24,4 +30,5 @@
         $l_caesar1 = "Caesar's Cipher 1";
         $l_caesar2 = "Caesar's Cipher 2";
           $l_rot13 = "ROT-13";
+   $l_trasposition = "Trasposition Cipher";
   $l_unknowncypher = "Unknown Cipher Method";

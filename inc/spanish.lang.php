@@ -1,4 +1,10 @@
 <?php
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
   // Language definitions
 
   // Main Variables
@@ -24,4 +30,5 @@
         $l_caesar1 = "Cifrado de Cesar 1";
         $l_caesar2 = "Cifrado de Cesar 2";
           $l_rot13 = "ROT-13";
+   $l_trasposition = "Cifrado de Trasposici&oacute;n";
   $l_unknowncypher = "M&eacute;todo de cifrado desconocido";

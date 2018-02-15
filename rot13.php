@@ -1,6 +1,12 @@
 <?php
-  // Encryption Type 3
-  // Cesar Type 1 - K=13
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions can be made to my E-Mail: carlosanibarro<at>gmail<dot>com
+##
+
+  // Cesar cipher Type 1 - K=13
   // ROT-13 aka ROT13
   echo "<div class=\"table-responsive\">\n";
   echo "<table class=\"table table-sm\">\n";
@@ -34,9 +40,9 @@
   echo "<tr>\n";
   echo " <td class=\"bg-success text-right\"><strong>$l_newphrase:</strong></td>\n";
   echo " <td><samp>";
-  $contador=0;
-  while ($contador < strlen($phrase)) {
-    $position = ord($phrase[$contador]);
+  $counter=0;
+  while ($counter < strlen($phrase)) {
+    $position = ord($phrase[$counter]);
     if ($position >=65 and $position<=90) {
       if ($position > 65+12) {
         $position=$position-13;
@@ -45,7 +51,7 @@
       }
     }
     echo chr($position);
-    $contador++;
+    $counter++;
   }
   echo "</samp></td>\n";
   echo "</tr>\n";
