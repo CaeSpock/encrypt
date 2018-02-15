@@ -1,3 +1,11 @@
+<?php
+##
+## This code is licensed under the GPL-v3
+## Belongs to the "encrypt" system that can be found here:
+## https://github.com/CaeSpock/encrypt
+## Questions and suggestions are always welcomed. Send me an E-Mail at: CAnibarro<at>WhiteSith<dot>com
+##
+?>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
