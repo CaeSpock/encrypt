@@ -29,7 +29,7 @@
       echo " <td><samp>$phrase</samp></td>";
       echo "</tr>\n";
       echo "<tr>\n";
-      echo " <td class=\"bg-info text-right\"><strong>Matrix:</strong></td>\n";
+      echo " <td class=\"bg-info text-right\"><strong>$l_matrix:</strong></td>\n";
       echo " <td><samp><pre>|";
       $position = 1;
       while ($position <= $enckey) {

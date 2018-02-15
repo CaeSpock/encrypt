@@ -25,6 +25,7 @@
        $l_nopsent = "You havent set a value for the phrase. Please go back and set it.";
          $l_reset = "Reset";
         $l_submit = "Send";
+        $l_matrix = "Matrix";
 
   // Encription types
         $l_caesar1 = "Caesar's Cipher 1";

@@ -25,6 +25,7 @@
        $l_nopsent = "No has configurado un valor para la frase. Por favor vuelve atras y hazlo.";
          $l_reset = "Resetear";
         $l_submit = "Enviar";
+        $l_matrix = "Matriz";
 
   // Encription types
         $l_caesar1 = "Cifrado de Cesar 1";
