@@ -16,30 +16,30 @@
   echo "</tr>\n";
   echo "<tr>\n";
   echo " <td class=\"table-dark text-right\">$l_alphabet:</td>\n";
-  echo " <td><samp>";
+  echo " <td><pre>";
   for ($i=65; $i<=90; $i++) {
     echo chr($i);
   }
-  echo "</samp></td>\n";
+  echo "</pre></td>\n";
   echo "</tr>\n";
   echo "<tr>\n";
   echo " <td class=\"table-dark text-right\">$l_newalphabet:</td>\n";
-  echo " <td><samp>";
+  echo " <td><pre>";
   for ($i=65; $i<=90; $i++) {
     $position=$i;
     if ($i>65+12) { $position=$i-26; }
     $letter=$position+13;
     echo chr($letter);
   }
-  echo "</samp></td>\n";
+  echo "</pre></td>\n";
   echo "</tr>\n";
   echo "<tr>\n";
   echo " <td class=\"bg-warning text-right\"><strong>$l_phrase:</strong></td>\n";
-  echo " <td><samp>$phrase</samp></td>";
+  echo " <td><pre>$phrase</pre></td>";
   echo "</tr>\n";
   echo "<tr>\n";
   echo " <td class=\"bg-success text-right\"><strong>$l_newphrase:</strong></td>\n";
-  echo " <td><samp>";
+  echo " <td><pre>";
   $counter=0;
   while ($counter < strlen($phrase)) {
     $position = ord($phrase[$counter]);
@@ -53,7 +53,7 @@
     echo chr($position);
     $counter++;
   }
-  echo "</samp></td>\n";
+  echo "</pre></td>\n";
   echo "</tr>\n";
   echo "</table>\n";
   echo "</div>\n";

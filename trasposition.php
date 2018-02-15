@@ -67,7 +67,7 @@
       echo "</tr>\n";
       echo "<tr>\n";
       echo " <td class=\"bg-success text-right\"><strong>$l_newphrase:</strong></td>\n";
-      echo " <td><samp>";
+      echo " <td><pre>";
       $columns = $enckey;
       while ($columns >= 1) {
         $rows = 1;
@@ -83,7 +83,7 @@
         }
         $columns--;
       }
-      echo "</samp></td>\n";
+      echo "</pre></td>\n";
       echo "</tr>\n";
       while ((strlen($phrase) % $enckey) != 0) {
         $phrase .= " ";
@@ -105,7 +105,7 @@
       }
       echo "<tr>\n";
       echo " <td class=\"bg-danger text-right\"><strong>$l_inverted:</strong></td>\n";
-      echo " <td><samp>";
+      echo " <td><pre>";
       $rows = 1;
       $columns = 1;
       $counter = 0;
@@ -124,7 +124,7 @@
         }
         $counter++;
       }
-      echo "</samp></td>\n";
+      echo "</pre></td>\n";
       echo "</tr>\n";
       echo "</table>\n";
       echo "</div>\n";
