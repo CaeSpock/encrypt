@@ -1,7 +1,9 @@
 # encrypt
 Encrypt is a small PHP based web page that will encrypt and decrypt a phrase with various shift cipher techniques.
 You just need a web server with a PHP enabled environment.
+
 Copyright (c) 2018 Carlos Anibarro Zelaya
+
 CAnibarro(at)WhiteSith(dot)com
 
 # Installation
@@ -42,4 +44,4 @@ In addition to the shifting made in Caesar’s cipher 1, every k characters you 
 From: https://en.wikipedia.org/wiki/ROT13
 
 ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet. ROT13 is a special case of the Caesar cipher, developed in ancient Rome.
-Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding. The algorithm provides virtually no cryptographic security, and is often cited as a canonical example of weak encryption.
+Because there are 26 letters (2x13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding. The algorithm provides virtually no cryptographic security, and is often cited as a canonical example of weak encryption.
