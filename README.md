@@ -1,6 +1,8 @@
 # encrypt
 Encrypt is a small PHP based web page that will encrypt and decrypt a phrase with various shift cipher techniques.
 You just need a web server with a PHP enabled environment.
+Copyright (c) 2018 Carlos Anibarro Zelaya
+CAnibarro(at)WhiteSith(dot)com
 
 # Installation
 Download and install the files in a directory and directly access it to use the program.
